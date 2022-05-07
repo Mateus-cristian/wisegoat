@@ -17,6 +17,7 @@
   height: 60%;
   background-color: #c1c1c1;
   width: 100%;
+  position: relative;
   &__quote {
     height: 100%;
     p {
@@ -31,7 +32,28 @@
       font-size: 2rem;
       display: flex;
       width: 100%;
+      position: relative;
+      right: 4rem;
       justify-content: flex-end;
+    }
+    &__refresh {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      a {
+        text-decoration: none;
+        transition: 1s all;
+        &:hover {
+          text-decoration: underline #725599;
+        }
+        svg {
+          transform: translateY(2px);
+        }
+        span {
+          font-size: 1.25rem;
+          margin-left: 10px;
+        }
+      }
     }
   }
   img {
@@ -43,6 +65,13 @@
 .logo {
   padding: 30px 50px;
   position: fixed;
+  a {
+    text-decoration: none;
+    transition: 1s all;
+    &:hover {
+      text-decoration: underline #725599;
+    }
+  }
   h2 {
     color: #baa193;
     font-size: 2rem;
