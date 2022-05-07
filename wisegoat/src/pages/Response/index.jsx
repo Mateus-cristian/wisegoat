@@ -19,7 +19,7 @@ export default function Response() {
           console.error("ops! ocorreu um erro" + err);
         });
       setLoading(false);
-    }, 1000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -35,19 +35,23 @@ export default function Response() {
               <h1>Goat</h1>
             </Link>
           </div>
-          <div className={styles.container}>
-            <div className={styles.main}>
-              <div className={styles.main__quote}>
-                <p>{quote.slip?.advice}</p>
-                <h3>- Goat</h3>
-                <div className={styles.main__quote__refresh}>
-                  <a href="/response">
-                    <HiRefresh />
-                    <span>Outro conselho</span>
-                  </a>
+          <div style={{ padding: "20px" }}>
+            <div className={styles.container}>
+              <div className={styles.main}>
+                <div className={styles.main__quote}>
+                  <p>{quote.slip?.advice}</p>
+                  <h3>- Goat</h3>
+                  <div className={styles.main__quote__refresh}>
+                    <a href="/response">
+                      <HiRefresh />
+                      <span>Outro conselho</span>
+                    </a>
+                  </div>
+                </div>
+                <div className={styles.main__image}>
+                  <img src={bode} alt="Bodezinho" />
                 </div>
               </div>
-              <img src={bode} alt="Bodezinho" />
             </div>
           </div>
         </>
