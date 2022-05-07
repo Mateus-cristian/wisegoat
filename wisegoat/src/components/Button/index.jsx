@@ -11,7 +11,7 @@ export default function Button() {
 
   return (
     <button onClick={handleClick} className={styles.button}>
-      enviar
+      Pedir conselho
     </button>
   );
 }

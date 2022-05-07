@@ -18,12 +18,13 @@
   background-color: #c1c1c1;
   width: 100%;
   &__quote {
-    padding: 150px;
+    height: 100%;
     p {
       color: #72005f;
+      padding: 50px 100px 0;
       font-size: 2rem;
       font-weight: 800;
-      max-width: 150px;
+      max-width: 300px;
     }
     h3 {
       color: #725599;
@@ -40,12 +41,12 @@
 }
 
 .logo {
-  padding: 50px;
+  padding: 30px 50px;
   position: fixed;
   h2 {
     color: #baa193;
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 1rem;
   }
   h1 {
     color: #72005f;

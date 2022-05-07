@@ -12,7 +12,7 @@ export default function index() {
           <h1>Goat</h1>
           <Button />
         </div>
-        <div className={styles.main__image}>
+        <div>
           <img src={Bode} alt="imagem de bode" />
         </div>
       </div>
