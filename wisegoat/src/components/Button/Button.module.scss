@@ -1,0 +1,17 @@
+button {
+  background-color: #72005f;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.5s all;
+  &:hover {
+    background-color: white;
+    color: #72005f;
+    font-weight: 600;
+    border: 1px solid #72005f;
+  }
+}

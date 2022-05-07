@@ -1,0 +1,46 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+h1,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  height: 100%;
+  &__description {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      color: #baa193;
+      font-size: 3rem;
+      line-height: 2rem;
+    }
+    h1 {
+      color: #72005f;
+      font-size: 7rem;
+      margin-bottom: 50px;
+    }
+  }
+  &__image {
+    img {
+      max-width: 500px;
+      max-height: 550px;
+    }
+  }
+}
